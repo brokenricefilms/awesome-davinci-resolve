@@ -1,0 +1,34 @@
+
+[2023-12-05|08:53:17 AM] ----------------------------------------------------------------------------
+[2023-12-05|08:53:17 AM] [Reactor Installer] Version 3.141 - October 31, 2019
+[2023-12-05|08:53:17 AM] [Created By] Andrew Hazelden <andrew@andrewhazelden.com>
+[2023-12-05|08:53:17 AM] [Reactor Installer] Detected Resolve 18.62 running on Windows.
+[2023-12-05|08:53:17 AM] [GitLab Branch] "master"
+[2023-12-05|08:53:17 AM] [Reactor.cfg] Does not exist yet
+[2023-12-05|08:53:20 AM] [Reactor] Installation Started
+[2023-12-05|08:53:20 AM] [Reactor: PathMap] "C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Reactor\"
+[2023-12-05|08:53:21 AM] Installation Status Step 1 of 8
+[2023-12-05|08:53:21 AM] [Downloads Started]
+[2023-12-05|08:53:22 AM] Installation Status Step 2 of 8
+[2023-12-05|08:53:22 AM] [Download URL]
+https://gitlab.com/api/v4/projects/5058837/repository/files/Reactor%2Efu/raw?ref=master&private_token=
+[2023-12-05|08:53:23 AM] Installation Status Step 2 of 8
+[2023-12-05|08:53:23 AM] [Reactor.fu Saved] C:\Users\master\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Support\Fusion\Config\Reactor.fu
+
+[2023-12-05|08:53:25 AM] Installation Status Step 3 of 8
+[2023-12-05|08:53:25 AM] [Download URL]
+https://gitlab.com/api/v4/projects/5058837/repository/files/System%2FReactor%2Elua/raw?ref=master&private_token=
+[2023-12-05|08:53:26 AM] Installation Status Step 3 of 8
+[2023-12-05|08:53:26 AM] [Reactor.lua Saved] C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Reactor\System\Reactor.lua
+
+[2023-12-05|08:53:27 AM] Installation Status Step 4 of 8
+[2023-12-05|08:53:27 AM] [Reactor.cfg Saved]
+C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Reactor\System\Reactor.cfg
+[2023-12-05|08:53:30 AM] Installation Status Step 5 of 8
+[2023-12-05|08:53:30 AM] [Reactor]
+All Downloads Completed
+[2023-12-05|08:53:32 AM] Installation Status Step 6 of 8
+[2023-12-05|08:53:32 AM] [Showing Reactor Folder]
+C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Reactor\System\
+[2023-12-05|08:53:34 AM] Installation Complete Step 7 of 8
+[2023-12-05|08:53:34 AM] Opening Reactor...
