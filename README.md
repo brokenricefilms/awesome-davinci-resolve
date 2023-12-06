@@ -10,6 +10,7 @@ Every good stuff about Resolve wellcome to contribute cool stuff in here, plugin
 - [Reactor](https://www.steakunderwater.com/wesuckless/viewtopic.php?t=3067): Fusion plugin manager
 - [Magic Animation](https://ko-fi.com/s/c83d7e91f7)
 - [Magic zoom](https://ko-fi.com/s/ed372d12c6)
+- [Highlight window](https://wipptemplates.com/product/highlight-window/)
 
 ## Project Template
 
