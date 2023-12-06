@@ -8,7 +8,7 @@ Every good stuff about Resolve wellcome to contribute cool stuff in here, plugin
 
 ## Plugin
 
-> plugin file will be in the [plugin](./plugin) folder if you lazy, of course it will not up to date 
+> free plugin will be in the [plugin](./plugin) folder if you lazy, of course it will not up to date and just free plugin only. Plz don't put stuff in the black market in this repo
 
 - [Snap Captions](https://github.com/licitfree/snap-captions): Snap Captions is designed to make creating fancy captions faster and easier than ever before!
 - [Reactor](https://www.steakunderwater.com/wesuckless/viewtopic.php?t=3067): Fusion plugin manager
