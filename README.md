@@ -1,6 +1,6 @@
 # Awesome stuff about Davinci Resolve
 
-Every good stuff about Resolve wellcome to contribute cool stuff in here, plugin, blog, tut, etc...
+Anything good stuff about Resolve wellcome to contribute cool stuff in here, plugin, blog, tut, etc...
 
 ## Inbox
 
