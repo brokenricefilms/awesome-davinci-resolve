@@ -19,6 +19,7 @@ Anything good stuff about Resolve wellcome to contribute cool stuff in here, plu
 ## Resource
 
 - [Animated textures](https://www.premiumbeat.com/blog/free-animated-textures/)
+- [cinepacks free stuff](https://cinepacks.store/collections/free-packs)
 
 ## Project Template
 
