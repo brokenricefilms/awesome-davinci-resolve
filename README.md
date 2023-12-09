@@ -21,6 +21,13 @@ Anything good stuff about Resolve wellcome to contribute cool stuff in here, plu
 - [Animated textures](https://www.premiumbeat.com/blog/free-animated-textures/)
 - [cinepacks free stuff](https://cinepacks.store/collections/free-packs)
 
+## Tools
+
+- <https://getyarn.io/yarn-find> search for word or phrase for tv, movies, and music clips
+- <https://jitter.video/> motion design little relate to figma
+- <https://ahrefs.com/youtube-keyword-tool> keyword data
+- [SoundQ](https://www.prosoundeffects.com/soundq/) best free plan sound effects tools (for me)
+
 ## Project Template
 
 > it's good to demo project template example youtube video link
