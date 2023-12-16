@@ -18,8 +18,14 @@ Anything good stuff about Resolve wellcome to contribute cool stuff in here, plu
 
 ## Resource
 
+### Visual
+
 - [Animated textures](https://www.premiumbeat.com/blog/free-animated-textures/)
 - [cinepacks free stuff](https://cinepacks.store/collections/free-packs)
+
+### Sound
+
+- [The Music Room aka Johnny Harris Used Music](https://johnny-harris-x-tom-fox.disco.ac/lib/1632843844)
 
 ## Tools
 
@@ -33,7 +39,3 @@ Anything good stuff about Resolve wellcome to contribute cool stuff in here, plu
 > it's good to demo project template example youtube video link
 
 - [Licit Free](./project-template/licitfree.drb)
-
-## To-dos
-
-- [ ]  
