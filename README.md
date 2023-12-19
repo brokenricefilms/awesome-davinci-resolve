@@ -15,6 +15,8 @@ Anything good stuff about Resolve wellcome to contribute cool stuff in here, plu
 - [Magic Animation](https://ko-fi.com/s/c83d7e91f7)
 - [Magic zoom](https://ko-fi.com/s/ed372d12c6)
 - [Editor Collection lite](https://wipptemplates.com/product/editorcollection-lite/)
+- [Blanking Generator](https://ko-fi.com/s/9eace83843)
+- [Frosted Glass](https://ko-fi.com/s/f6b8f08512)
 
 ## Resource
 
