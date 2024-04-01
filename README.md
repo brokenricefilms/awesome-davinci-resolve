@@ -27,7 +27,9 @@ Anything good stuff about Resolve wellcome to contribute cool stuff in here, plu
 
 ### Sound
 
-- [The Music Room aka Johnny Harris Used Music](https://johnny-harris-x-tom-fox.disco.ac/lib/1632843844)
+> copyright free
+
+- Servida Stream: https://www.youtube.com/watch?v=1sKw1D-NtwgI
 
 ## Tools
 
