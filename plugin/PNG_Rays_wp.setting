@@ -1,0 +1,640 @@
+{
+	Tools = ordered() {
+		PNG_Rays_wp = GroupOperator {
+			Inputs = ordered() {
+				MainInput1 = InstanceInput {
+					SourceOp = "PipeRouter1",
+					Source = "Input",
+				},
+				Input1 = InstanceInput {
+					SourceOp = "SoftGlow_0",
+					Source = "Gain",
+					Name = "1. Core Glow Gain",
+					Default = 5,
+				},
+				Input2 = InstanceInput {
+					SourceOp = "SoftGlow_0",
+					Source = "XGlowSize",
+					Name = "1. Core Glow Size",
+					Default = 10,
+				},
+				Input3 = InstanceInput {
+					SourceOp = "LightRays1",
+					Source = "threshold",
+					Name = "2. Ray Threshold",
+					Default = 0.5,
+				},
+				Input4 = InstanceInput {
+					SourceOp = "LightRays1",
+					Source = "xyPosition",
+					Name = "2. Ray Position",
+					DefaultX = 0.5,
+					DefaultY = 0.5,
+				},
+				Input8 = InstanceInput {
+					SourceOp = "LightRays1",
+					Source = "colorRed",
+					Name = "2. Ray Color",
+					ControlGroup = 9,
+					Default = 1,
+				},
+				Input9 = InstanceInput {
+					SourceOp = "LightRays1",
+					Source = "colorGreen",
+					Name = "2. Ray Color",
+					ControlGroup = 9,
+					Default = 1,
+				},
+				Input10 = InstanceInput {
+					SourceOp = "LightRays1",
+					Source = "colorBlue",
+					Name = "2. Ray Color",
+					ControlGroup = 9,
+					Default = 1,
+				},
+				Input12 = InstanceInput {
+					SourceOp = "Instance_LightRays1",
+					Source = "length",
+					Name = "3. Inner Ray Length",
+					Default = 0.1,
+				},
+				Input13 = InstanceInput {
+					SourceOp = "Instance_LightRays1",
+					Source = "soften",
+					Name = "3. Inner Ray Soften",
+					Default = 0.05,
+				},
+				Input14 = InstanceInput {
+					SourceOp = "Instance_LightRays1",
+					Source = "brightness",
+					Name = "3. Inner Ray Brightness",
+					Default = 0.25,
+				},
+				Input5 = InstanceInput {
+					SourceOp = "LightRays1",
+					Source = "length",
+					Name = "4. Outer Ray Length",
+					Default = 0.425,
+				},
+				Input6 = InstanceInput {
+					SourceOp = "LightRays1",
+					Source = "soften",
+					Name = "4. Outer Ray Soften",
+					Default = 0,
+				},
+				Input7 = InstanceInput {
+					SourceOp = "LightRays1",
+					Source = "brightness",
+					Name = "4. Outer Ray Brightness",
+					Default = 0.575,
+				},
+				Input16 = InstanceInput {
+					SourceOp = "FastNoise1",
+					Source = "SeetheRate",
+					Name = "5. Displace Seethe Rate",
+					Default = 0.05,
+				},
+				Input18 = InstanceInput {
+					SourceOp = "Displace1",
+					Source = "RefractionStrength",
+					Name = "5. Displace Strength",
+					Default = 0.5,
+				},
+				Input20 = InstanceInput {
+					SourceOp = "ZoomBlur1",
+					Source = "zoomAmount",
+					Name = "5. Zoom Blur Amount",
+					Default = -1,
+				},
+				Input19 = InstanceInput {
+					SourceOp = "ZoomBlur1",
+					Source = "xyPosition",
+					Name = "5. Zoom Blur Position",
+					DefaultX = 0.5,
+					DefaultY = 0.5,
+				},
+				Input17 = InstanceInput {
+					SourceOp = "Merge4",
+					Source = "Blend",
+					Name = "6. Core Glow Blend",
+					Default = 0.4,
+				},
+				Input15 = InstanceInput {
+					SourceOp = "Instance_LightRays1",
+					Source = "Blend",
+					Name = "6. Inner Ray Blend",
+					Default = 1,
+				},
+				Input11 = InstanceInput {
+					SourceOp = "LightRays1",
+					Source = "Blend",
+					Name = "6. Outer Ray Blend",
+					Default = 1,
+				},
+				Input22 = InstanceInput {
+					SourceOp = "Merge6",
+					Source = "Blend",
+					Name = "6. Master Blend",
+					Default = 1,
+				},
+				Input23 = InstanceInput {
+					SourceOp = "Merge6",
+					Source = "ProcessRed",
+					Name = "Process",
+					ControlGroup = 22,
+					Default = 1,
+				},
+				Input24 = InstanceInput {
+					SourceOp = "Merge6",
+					Source = "ProcessGreen",
+					ControlGroup = 22,
+					Default = 1,
+				},
+				Input25 = InstanceInput {
+					SourceOp = "Merge6",
+					Source = "ProcessBlue",
+					ControlGroup = 22,
+					Default = 1,
+				},
+				Input26 = InstanceInput {
+					SourceOp = "Merge6",
+					Source = "ProcessAlpha",
+					ControlGroup = 22,
+					Default = 1,
+				},
+				Input27 = InstanceInput {
+					SourceOp = "Merge6",
+					Source = "ApplyMaskInverted",
+					Name = "6. Apply Mask Inverted",
+					Default = 0,
+				},
+				Input28 = InstanceInput {
+					SourceOp = "Merge6",
+					Source = "MultiplyByMask",
+					Name = "6. Multiply by Mask",
+					Default = 0,
+				},
+				Input21 = InstanceInput {
+					SourceOp = "Merge6",
+					Source = "EffectMask",
+				}
+			},
+			Outputs = {
+				MainOutput1 = InstanceOutput {
+					SourceOp = "Merge6",
+					Source = "Output",
+				}
+			},
+			ViewInfo = GroupInfo { Pos = { 0, 0 } },
+			Tools = ordered() {
+				PipeRouter1 = PipeRouter {
+					ViewInfo = PipeRouterInfo { Pos = { -550, -247.5 } },
+				},
+				SoftGlow_0 = SoftGlow {
+					NameSet = true,
+					Inputs = {
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						Threshold = Input { Value = 0.15, },
+						Gain = Input { Value = 5, },
+						Input = Input {
+							SourceOp = "PipeRouter1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -550, -181.5 } },
+				},
+				ErodeDilate2 = ErodeDilate {
+					CtrlWZoom = false,
+					Inputs = {
+						Filter = Input { Value = 2, },
+						XAmount = Input { Value = -0.01, },
+						Input = Input {
+							SourceOp = "SoftGlow_0",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -385, -115.5 } },
+				},
+				LightRays1 = ofx.com.blackmagicdesign.resolvefx.Lightray {
+					Inputs = {
+						EffectMask = Input {
+							SourceOp = "ErodeDilate2",
+							Source = "Output",
+						},
+						ApplyMaskInverted = Input { Value = 1, },
+						MultiplyByMask = Input { Value = 1, },
+						Source = Input {
+							SourceOp = "SoftGlow_0",
+							Source = "Output",
+						},
+						outputSelection = Input { Value = FuID { "OUTPUT_SELECTION_FINAL_IMAGE" }, },
+						raysSource = Input { Value = FuID { "RAYS_SOURCE_EDGES" }, },
+						threshold = Input { Value = 0.5, },
+						isAlphaMasking = Input { Value = 1, },
+						isAlphaComping = Input { Value = 1, },
+						position = Input { Value = 1, },
+						raysDirection = Input { Value = FuID { "RAYS_BEARING_RADIAL" }, },
+						xPosition = Input {
+							Value = 0.5,
+							Disabled = true,
+						},
+						yPosition = Input {
+							Value = 1.20000004768372,
+							Disabled = true,
+						},
+						xyPosition = Input { Value = { 0.5, 0.5 }, },
+						angle = Input { Value = 180, },
+						appearance = Input { Value = 1, },
+						rayDropoff = Input { Value = FuID { "RAY_DROPOFF_SOFT_WINDOW" }, },
+						length = Input { Value = 0.425, },
+						soften = Input { Value = 0, },
+						brightness = Input { Value = 0.575, },
+						colorRed = Input { Value = 1, },
+						colorGreen = Input { Value = 1, },
+						colorBlue = Input { Value = 1, },
+						CompositeType = Input { Value = FuID { "COMPOSITE_ADD" }, },
+						recovery = Input { Value = 0, },
+						isUseLegacyPosition = Input { Value = 0, },
+						blendGroup = Input { Value = 0, },
+						blendIn = Input { Value = 1, },
+						blend = Input { Value = 0, },
+						ignoreContentShape = Input { Value = 0, },
+						legacyIsProcessRGBOnly = Input { Value = 0, },
+						IsNoTemporalFramesReqd = Input { Value = 0, },
+						refreshTrigger = Input { Value = 1, },
+						resolvefxVersion = Input { Value = "1.5", },
+					},
+					ViewInfo = OperatorInfo { Pos = { -385, -82.5 } },
+				},
+				Instance_LightRays1 = ofx.com.blackmagicdesign.resolvefx.Lightray {
+					SourceOp = "LightRays1",
+					Inputs = {
+						EffectMask = Input { },
+						SettingsNest = Input { },
+						Blend = Input { },
+						Source = Input {
+							SourceOp = "SoftGlow_0",
+							Source = "Output",
+						},
+						position = Input { Value = 1, },
+						xPosition = Input {
+							Value = 0.5,
+							Disabled = true,
+						},
+						yPosition = Input {
+							Value = 1.20000004768372,
+							Disabled = true,
+						},
+						appearance = Input { Value = 1, },
+						length = Input { Value = 0.1, },
+						soften = Input { Value = 0.05, },
+						brightness = Input { Value = 0.25, },
+						blendGroup = Input { Value = 0, },
+						CommentsNest = Input { },
+						FrameRenderScriptNest = Input { },
+						StartRenderScripts = Input { },
+						EndRenderScripts = Input { },
+					},
+					ViewInfo = OperatorInfo { Pos = { -550, -82.5 } },
+				},
+				FastNoise1 = FastNoise {
+					Inputs = {
+						Width = Input { Value = 1920, },
+						Height = Input { Value = 1080, },
+						UseFrameFormatSettings = Input { Value = 1, },
+						["Gamut.ColorSpaceNest"] = Input { Value = 1, },
+						["Gamut.GammaSpaceNest"] = Input { Value = 1, },
+						["Gamut.SLogVersion"] = Input { Value = FuID { "SLog2" }, },
+						Detail = Input { Value = 0.63, },
+						Contrast = Input { Value = 3.16, },
+						Brightness = Input { Value = -0.22, },
+						XScale = Input { Value = 1.57, },
+						SeetheRate = Input { Value = 0.05, },
+						GradientType = Input { Value = 5, },
+						Start = Input { Value = { 0.5, 0.5 }, },
+						Gradient = Input {
+							Value = Gradient {
+								Colors = {
+									[0.119402985074627] = { 0, 0, 0, 0 },
+									[1] = { 1, 1, 1, 1 }
+								}
+							},
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -275, -49.5 } },
+				},
+				Merge4 = Merge {
+					Inputs = {
+						Blend = Input { Value = 0.4, },
+						Background = Input {
+							SourceOp = "EdgeDetect1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Instance_LightRays1",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -550, -49.5 } },
+				},
+				EdgeDetect1 = ofx.com.blackmagicdesign.resolvefx.EdgeDetect {
+					Inputs = {
+						Blend = Input { Value = 0.3, },
+						Source = Input {
+							SourceOp = "PipeRouter1",
+							Source = "Output",
+						},
+						EdgeDetectMode = Input { Value = FuID { "EDGE_DETECT_MODE_RGB" }, },
+						RGBColorRed = Input { Value = 1, },
+						RGBColorGreen = Input { Value = 1, },
+						RGBColorBlue = Input { Value = 1, },
+						detectionGroup = Input { Value = 1, },
+						EdgeThreshold = Input { Value = 0, },
+						EdgeSmooth = Input { Value = 0.100000001490116, },
+						edgeWidth = Input { Value = 0.2, },
+						Brightness = Input { Value = 5, },
+						edgeGamma = Input { Value = 1, },
+						DenoiseType = Input { Value = FuID { "DENOISE_TYPE_GAUSSIAN_BLUR" }, },
+						DenoiseStrength = Input { Value = 0.200000002980232, },
+						EdgeBlur = Input { Value = 0.3, },
+						EdgeOverlay = Input { Value = 1, },
+						filterGroup = Input { Value = 1, },
+						filterType = Input { Value = FuID { "FilterTypeNone" }, },
+						filterScale = Input { Value = 0.25, },
+						filterWater = Input { Value = 0.5, },
+						suppression = Input { Value = FuID { "SuppressionKeepLight" }, },
+						halfEdgeGain = Input { Value = 10, },
+						advancedGroup = Input { Value = 0, },
+						autoGain = Input { Value = 0, },
+						isClamp = Input { Value = 1, },
+						BlendAmount = Input { Value = 0, },
+						isLegacy = Input { Value = 0, },
+						blendGroup = Input { Value = 0, },
+						blendIn = Input { Value = 1, },
+						blend = Input { Value = 0, },
+						ignoreContentShape = Input { Value = 0, },
+						legacyIsProcessRGBOnly = Input { Value = 0, },
+						IsNoTemporalFramesReqd = Input { Value = 0, },
+						refreshTrigger = Input { Value = 1, },
+						resolvefxVersion = Input { Value = "2.0", },
+					},
+					ViewInfo = OperatorInfo { Pos = { -770, -49.5 } },
+				},
+				Displace1 = Displace {
+					Inputs = {
+						Channel = Input { Value = 3, },
+						RefractionStrength = Input { Value = 0.5, },
+						Input = Input {
+							SourceOp = "LightRays1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "FastNoise1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -385, -49.5 } },
+				},
+				ZoomBlur1 = ofx.com.blackmagicdesign.resolvefx.ZoomBlur {
+					Inputs = {
+						Source = Input {
+							SourceOp = "Displace1",
+							Source = "Output",
+						},
+						CenterXPos = Input { Value = 0.5, },
+						CenterYPos = Input { Value = 0.5, },
+						xyPosition = Input { Value = { 0.5, 0.5 }, },
+						SmoothStrength = Input { Value = 1, },
+						zoomAmount = Input { Value = -1, },
+						blurTypeChoice = Input { Value = FuID { "BlurTypeRealistic" }, },
+						centerExclusion = Input {
+							Value = 0,
+							Disabled = true,
+						},
+						advancedControlsGroup = Input { Value = 0, },
+						BorderType = Input { Value = FuID { "BORDER_TYPE_REPLICATE" }, },
+						isFollowSizing = Input { Value = 1, },
+						isBlurAlpha = Input { Value = 1, },
+						BlendAmount = Input { Value = 0, },
+						isUseLegacyPosition = Input { Value = 0, },
+						blendGroup = Input { Value = 0, },
+						blendIn = Input { Value = 1, },
+						blend = Input { Value = 0, },
+						ignoreContentShape = Input { Value = 0, },
+						legacyIsProcessRGBOnly = Input { Value = 0, },
+						IsNoTemporalFramesReqd = Input { Value = 0, },
+						refreshTrigger = Input { Value = 1, },
+						resolvefxVersion = Input { Value = "2.1", },
+					},
+					ViewInfo = OperatorInfo { Pos = { -385, -16.5 } },
+				},
+				LightWrap_Daex = MacroOperator {
+					NameSet = true,
+					CustomData = { Path = { Map = { ["Setting:"] = "Macros:\\Daex\\" } }, },
+					Inputs = ordered() {
+						MainInput1 = InstanceInput {
+							SourceOp = "PipeRouter2",
+							Source = "Input",
+						},
+						Input1 = InstanceInput {
+							SourceOp = "Glow1",
+							Source = "XGlowSize",
+							Name = "Light Size",
+							MaxScale = 300,
+							Default = 100,
+						},
+						Input2 = InstanceInput {
+							SourceOp = "Glow1",
+							Source = "Glow",
+							Name = "Light Strength",
+							Default = 0.88,
+						},
+						MainInput2 = InstanceInput {
+							SourceOp = "LumaKeyer1_1",
+							Source = "Input",
+							Name = "Background",
+						},
+						Input3 = InstanceInput {
+							SourceOp = "LumaKeyer1_1",
+							Source = "High",
+							ControlGroup = 5,
+							Default = 1,
+						},
+						Input4 = InstanceInput {
+							SourceOp = "LumaKeyer1_1",
+							Source = "Low",
+							ControlGroup = 5,
+							Default = 0,
+						},
+						Input5 = InstanceInput {
+							SourceOp = "LumaKeyer1_1",
+							Source = "MatteContrast",
+							Default = 0,
+						},
+						Input6 = InstanceInput {
+							SourceOp = "LumaKeyer1_1",
+							Source = "MatteGamma",
+							Default = 1,
+						}
+					},
+					Outputs = {
+						MainOutput1 = InstanceOutput {
+							SourceOp = "Merge5",
+							Source = "Output",
+						}
+					},
+					ViewInfo = GroupInfo { Pos = { -550, -16.5 } },
+					Tools = ordered() {
+						PipeRouter2 = PipeRouter {
+							CtrlWShown = false,
+							Inputs = {
+								Input = Input {
+									SourceOp = "Merge4",
+									Source = "Output",
+								},
+							},
+							ViewInfo = PipeRouterInfo { Pos = { -220, 107.258 } },
+						},
+						Glow1 = Glow {
+							CtrlWShown = false,
+							Inputs = {
+								Blend = Input { Value = 0.2, },
+								Filter = Input { Value = FuID { "Fast Gaussian" }, },
+								XGlowSize = Input { Value = 49.6, },
+								Glow = Input { Value = 0.866, },
+								Input = Input {
+									SourceOp = "LumaKeyer1_1",
+									Source = "Output",
+								},
+							},
+							ViewInfo = OperatorInfo { Pos = { 220, 107.258 } },
+						},
+						Bitmap1 = BitmapMask {
+							CtrlWShown = false,
+							Inputs = {
+								Filter = Input { Value = FuID { "Fast Gaussian" }, },
+								MaskWidth = Input { Value = 1920, },
+								MaskHeight = Input { Value = 1080, },
+								PixelAspect = Input { Value = { 1, 1 }, },
+								UseFrameFormatSettings = Input { Value = 1, },
+								ClippingMode = Input { Value = FuID { "None" }, },
+								Image = Input {
+									SourceOp = "PipeRouter2",
+									Source = "Output",
+								},
+							},
+							ViewInfo = OperatorInfo { Pos = { 0, 107.258 } },
+						},
+						LumaKeyer1_1 = LumaKeyer {
+							CtrlWShown = false,
+							Inputs = {
+								Filter = Input { Value = FuID { "Fast Gaussian" }, },
+								MatteGamma = Input { Value = 1.06, },
+								["Garbage.Matte"] = Input {
+									SourceOp = "Bitmap1",
+									Source = "Mask",
+								},
+								Input = Input {
+									SourceOp = "ZoomBlur1",
+									Source = "Output",
+								},
+							},
+							ViewInfo = OperatorInfo { Pos = { 55, 173.258 } },
+						},
+						Merge5 = Merge {
+							CtrlWZoom = false,
+							CtrlWShown = false,
+							Inputs = {
+								EffectMask = Input {
+									SourceOp = "Bitmap1",
+									Source = "Mask",
+								},
+								Background = Input {
+									SourceOp = "PipeRouter2",
+									Source = "Output",
+								},
+								Foreground = Input {
+									SourceOp = "Glow1",
+									Source = "Output",
+								},
+								PerformDepthMerge = Input { Value = 0, },
+							},
+							ViewInfo = OperatorInfo { Pos = { 220, 8.25721 } },
+						}
+					},
+				},
+				Merge3 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "SoftGlow1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Merge5",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -550, 16.5 } },
+				},
+				SoftGlow1 = SoftGlow {
+					Inputs = {
+						Filter = Input { Value = FuID { "Fast Gaussian" }, },
+						Gain = Input {
+							Value = 0.666666666666667,
+							Expression = "SoftGlow_0.Gain/7.5",
+						},
+						XGlowSize = Input {
+							Value = 100,
+							Expression = "SoftGlow_0.XGlowSize*10",
+						},
+						Input = Input {
+							SourceOp = "SoftGlow_0",
+							Source = "Output",
+						},
+					},
+					ViewInfo = OperatorInfo { Pos = { -660, 16.5 } },
+				},
+				Merge2 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "ZoomBlur1",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Merge3",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -550, 49.5 } },
+				},
+				Merge6 = Merge {
+					Inputs = {
+						Background = Input {
+							SourceOp = "PipeRouter3",
+							Source = "Output",
+						},
+						Foreground = Input {
+							SourceOp = "Merge2",
+							Source = "Output",
+						},
+						PerformDepthMerge = Input { Value = 0, },
+					},
+					ViewInfo = OperatorInfo { Pos = { -550, 115.5 } },
+				},
+				PipeRouter3 = PipeRouter {
+					Inputs = {
+						Input = Input {
+							SourceOp = "PipeRouter1",
+							Source = "Output",
+						},
+					},
+					ViewInfo = PipeRouterInfo { Pos = { -935, 16.5 } },
+				}
+			},
+		}
+	},
+	ActiveTool = "PNG_Rays_wp"
+}
