@@ -65,3 +65,36 @@ All Downloads Completed
 C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Reactor\System\
 [2024-03-17|11:51:44 AM] Installation Complete Step 7 of 8
 [2024-03-17|11:51:44 AM] Opening Reactor...
+[2024-04-19|02:56:43 PM] ----------------------------------------------------------------------------
+[2024-04-19|02:56:43 PM] [Reactor Installer] Version 3.141 - October 31, 2019
+[2024-04-19|02:56:43 PM] [Created By] Andrew Hazelden <andrew@andrewhazelden.com>
+[2024-04-19|02:56:43 PM] [Reactor Installer] Detected Resolve 18.66 running on Windows.
+[2024-04-19|02:56:43 PM] [GitLab Branch] "master"
+[2024-04-19|02:56:43 PM] [Reactor.cfg] Does not exist yet
+[2024-04-19|02:56:45 PM] [Reactor] Installation Started
+[2024-04-19|02:56:45 PM] [Reactor: PathMap] "C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Reactor\"
+[2024-04-19|02:56:46 PM] Installation Status Step 1 of 8
+[2024-04-19|02:56:46 PM] [Downloads Started]
+[2024-04-19|02:56:47 PM] Installation Status Step 2 of 8
+[2024-04-19|02:56:47 PM] [Download URL]
+https://gitlab.com/api/v4/projects/5058837/repository/files/Reactor%2Efu/raw?ref=master&private_token=
+[2024-04-19|02:56:48 PM] Installation Status Step 2 of 8
+[2024-04-19|02:56:48 PM] [Reactor.fu Saved] C:\Users\master\AppData\Roaming\Blackmagic Design\DaVinci Resolve\Support\Fusion\Config\Reactor.fu
+
+[2024-04-19|02:56:49 PM] Installation Status Step 3 of 8
+[2024-04-19|02:56:49 PM] [Download URL]
+https://gitlab.com/api/v4/projects/5058837/repository/files/System%2FReactor%2Elua/raw?ref=master&private_token=
+[2024-04-19|02:56:51 PM] Installation Status Step 3 of 8
+[2024-04-19|02:56:51 PM] [Reactor.lua Saved] C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Reactor\System\Reactor.lua
+
+[2024-04-19|02:56:52 PM] Installation Status Step 4 of 8
+[2024-04-19|02:56:52 PM] [Reactor.cfg Saved]
+C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Reactor\System\Reactor.cfg
+[2024-04-19|02:56:54 PM] Installation Status Step 5 of 8
+[2024-04-19|02:56:54 PM] [Reactor]
+All Downloads Completed
+[2024-04-19|02:56:56 PM] Installation Status Step 6 of 8
+[2024-04-19|02:56:56 PM] [Showing Reactor Folder]
+C:\ProgramData\Blackmagic Design\DaVinci Resolve\Fusion\Reactor\System\
+[2024-04-19|02:56:58 PM] Installation Complete Step 7 of 8
+[2024-04-19|02:56:58 PM] Opening Reactor...
