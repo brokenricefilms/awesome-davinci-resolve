@@ -6,6 +6,8 @@ Anything good stuff about Resolve wellcome to contribute cool stuff in here, plu
 
 > put stuff in here until it can categorizaion
 
+https://github.com/laciechang/resolve-batch-exporter
+
 Davinci-Resolve-Auto-Render-tool
 - https://github.com/cloudjuice/Davinci-Resolve-Auto-Render-tool
 - https://www.steakunderwater.com/wesuckless/viewtopic.php?t=6576&sid=f1e6ad1f1e1008150475d0d284676a60
