@@ -51,4 +51,5 @@ Davinci-Resolve-Auto-Render-tool
 - <https://getyarn.io/yarn-find> search for word or phrase for tv, movies, and music clips
 - <https://jitter.video/> motion design little relate to figma
 - <https://ahrefs.com/youtube-keyword-tool> keyword data
-- [SoundQ](https://www.prosoundeffects.com/soundq/) best free plan sound effects tools (for me)
+- [SoundQ](https://www.prosoundeffects.com/soundq/) good free plan sound effects manager
+- Basehead: good free plan sound effects manager (faster than soundq)
