@@ -6,7 +6,8 @@ Anything good stuff about Resolve wellcome to contribute cool stuff in here, plu
 
 > put stuff in here until it can categorizaion
 
-https://github.com/laciechang/resolve-batch-exporter
+https://github.com/laciechang/resolve-batch-exporter  
+https://github.com/tmoroney/auto-subs (great python script for autosubs on free resolve)
 
 Davinci-Resolve-Auto-Render-tool
 - https://github.com/cloudjuice/Davinci-Resolve-Auto-Render-tool
