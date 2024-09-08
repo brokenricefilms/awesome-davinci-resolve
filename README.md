@@ -2,7 +2,7 @@
 
 Any valuable resources related to Resolve are welcome for contribution, including plugins, blogs, tutorials, and more.
 
-If you'd like to contribute but aren't familiar with using Git or GitHub, and are a bit lazy like me, you can send it to me at [brokenricefilms@gmail.com](mailto:brokenricefilms@gmail.com)
+> If you'd like to contribute but aren't familiar with using Git or GitHub, and are a bit lazy like me, you can send it to me at [brokenricefilms@gmail.com](mailto:brokenricefilms@gmail.com)
 
 ## Inbox
 
