@@ -14,7 +14,7 @@ Davinci-Resolve-Auto-Render-tool
 - https://github.com/cloudjuice/Davinci-Resolve-Auto-Render-tool
 - https://www.steakunderwater.com/wesuckless/viewtopic.php?t=6576&sid=f1e6ad1f1e1008150475d0d284676a60
 
-Proxima
+[Proxima](https://github.com/in03/proxima)
 - https://github.com/in03/proxima
 > Transcode source media directly from DaVinci Resolve using multiple machines for encoding. Great for creating proxies quickly.
 
