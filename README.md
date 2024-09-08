@@ -27,6 +27,8 @@ Davinci-Resolve-Auto-Render-tool
 
 ## Resource
 
+> Non-related to DaVinci Resolve is fine, as long as it's about video editing in general. If you believe it could benefit other video editors, feel free to include it here
+
 ### Visual
 
 - [Animated textures](https://www.premiumbeat.com/blog/free-animated-textures/)
