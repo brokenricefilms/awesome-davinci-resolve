@@ -1,13 +1,12 @@
 # Awesome stuff about Davinci Resolve
 
-Anything good stuff about Resolve wellcome to contribute cool stuff in here, plugin, blog, tut, etc...
+Any valuable resources related to Resolve are welcome for contribution, including plugins, blogs, tutorials, and more.
 
 ## Inbox
 
-> put stuff in here until it can categorizaion
+> Place items here until they can be categorized, or if you're unsure where to put them
 
 https://github.com/laciechang/resolve-batch-exporter  
-https://github.com/tmoroney/auto-subs (great python script for autosubs on free resolve)
 
 Davinci-Resolve-Auto-Render-tool
 - https://github.com/cloudjuice/Davinci-Resolve-Auto-Render-tool
@@ -15,9 +14,10 @@ Davinci-Resolve-Auto-Render-tool
 
 ## Plugin
 
-> free plugin will be in the [plugin](./plugin) folder if you lazy, of course it will not up to date and just free plugin only. **Plz don't put stuff in the black market in this repo**
+> The free plugin will be in the [plugin](./plugin) folder if you're feeling lazy. However, it won't be up-to-date and will only include free plugins. Please refrain from adding anything from the black market to this repository.
 
 - [Snap Captions](https://github.com/licitfree/snap-captions): Snap Captions is designed to make creating fancy captions faster and easier than ever before!
+- [Davinci Resolve AI Subtitles](https://github.com/tmoroney/auto-subs): great python script for autosubs on free resolve
 - [Reactor](https://www.steakunderwater.com/wesuckless/viewtopic.php?t=3067): Fusion plugin manager
 - [Magic Animation](https://ko-fi.com/s/c83d7e91f7)
 - [Magic zoom](https://ko-fi.com/s/ed372d12c6)
