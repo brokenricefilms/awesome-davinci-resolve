@@ -40,7 +40,7 @@ Davinci-Resolve-Auto-Render-tool
 
 ### Sound
 
-> copyright free
+> ROYALTY FREE
 
 - Servida Stream: https://www.youtube.com/watch?v=1sKw1D-NtwgI
 
